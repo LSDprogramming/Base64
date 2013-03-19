@@ -15,7 +15,7 @@
     NSData *encodedData = nil;
     
     NSUInteger dataToEncodeLength = dataToEncode.length;
-    NSUInteger encodedBufferLength = ((dataToEncodeLength + 2) / 3) * 4;
+    NSUInteger encodedBufferLength = ((dataToEncodeLength + 2) / 3) * 4 + 1;
     
     char *encodedBuffer = malloc(encodedBufferLength);
     
@@ -24,7 +24,7 @@
     
     if(encodedRealLength >= 0) {
         encodedData = [NSData dataWithBytesNoCopy:encodedBuffer
-                                           length:encodedRealLength
+                                           length:encodedRealLength + 1
                                      freeWhenDone:YES];
     } else {
         free(encodedBuffer);
@@ -39,7 +39,7 @@
     NSData *encodedData = nil;
     
     NSUInteger dataToEncodeLength = dataToEncode.length;
-    NSUInteger encodedBufferLength = ((dataToEncodeLength + 2) / 3) * 4;
+    NSUInteger encodedBufferLength = ((dataToEncodeLength + 2) / 3) * 4 + 1;
     
     char *encodedBuffer = malloc(encodedBufferLength);
     
@@ -48,7 +48,7 @@
     
     if(encodedRealLength >= 0) {
         encodedData = [NSData dataWithBytesNoCopy:encodedBuffer
-                                           length:encodedRealLength
+                                           length:encodedRealLength + 1
                                      freeWhenDone:YES];
     } else {
         free(encodedBuffer);
