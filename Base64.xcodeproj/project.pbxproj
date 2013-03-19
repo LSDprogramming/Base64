@@ -18,6 +18,8 @@
 		EB11392116F8DD9E00C360BC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB11392016F8DD9E00C360BC /* Default-568h@2x.png */; };
 		EB11392416F8DD9E00C360BC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB11392216F8DD9E00C360BC /* MainStoryboard.storyboard */; };
 		EB11392716F8DD9E00C360BC /* LSDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB11392616F8DD9E00C360BC /* LSDViewController.m */; };
+		EB11392E16F8DDC100C360BC /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EB11392D16F8DDC100C360BC /* libresolv.dylib */; };
+		EB11393116F8DDE700C360BC /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = EB11393016F8DDE700C360BC /* NSData+Base64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		EB11392316F8DD9E00C360BC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		EB11392516F8DD9E00C360BC /* LSDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSDViewController.h; sourceTree = "<group>"; };
 		EB11392616F8DD9E00C360BC /* LSDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSDViewController.m; sourceTree = "<group>"; };
+		EB11392D16F8DDC100C360BC /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
+		EB11392F16F8DDE700C360BC /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		EB11393016F8DDE700C360BC /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB11392E16F8DDC100C360BC /* libresolv.dylib in Frameworks */,
 				EB11390B16F8DD9E00C360BC /* UIKit.framework in Frameworks */,
 				EB11390D16F8DD9E00C360BC /* Foundation.framework in Frameworks */,
 				EB11390F16F8DD9E00C360BC /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +62,7 @@
 		EB1138FE16F8DD9E00C360BC = {
 			isa = PBXGroup;
 			children = (
+				EB11392D16F8DDC100C360BC /* libresolv.dylib */,
 				EB11391016F8DD9E00C360BC /* Base64 */,
 				EB11390916F8DD9E00C360BC /* Frameworks */,
 				EB11390816F8DD9E00C360BC /* Products */,
@@ -89,6 +96,8 @@
 				EB11392516F8DD9E00C360BC /* LSDViewController.h */,
 				EB11392616F8DD9E00C360BC /* LSDViewController.m */,
 				EB11391116F8DD9E00C360BC /* Supporting Files */,
+				EB11392F16F8DDE700C360BC /* NSData+Base64.h */,
+				EB11393016F8DDE700C360BC /* NSData+Base64.m */,
 			);
 			path = Base64;
 			sourceTree = "<group>";
@@ -177,6 +186,7 @@
 				EB11391716F8DD9E00C360BC /* main.m in Sources */,
 				EB11391B16F8DD9E00C360BC /* LSDAppDelegate.m in Sources */,
 				EB11392716F8DD9E00C360BC /* LSDViewController.m in Sources */,
+				EB11393116F8DDE700C360BC /* NSData+Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

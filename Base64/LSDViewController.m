@@ -7,6 +7,7 @@
 //
 
 #import "LSDViewController.h"
+#import "NSData+Base64.h"
 
 @interface LSDViewController ()
 
@@ -18,6 +19,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSString *testString = @"Test. Test. Test.";
+    
+    NSLog(@"String: %@\nEncoded string: %@\n Decoded string: %@", testString, [testString base64EncodedString], [[testString base64EncodedString] base64DecodedString]);
 }
 
 - (void)didReceiveMemoryWarning
